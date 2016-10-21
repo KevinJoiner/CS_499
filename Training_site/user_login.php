@@ -6,44 +6,47 @@ require_once('../sql_connector.php');?>
 
 <?php
 if(isset($_POST['submit'])) {
-    if (preg_match('%/[A-Za-z0-9\.\-\$\@\$\!\%\*\#\?\&]%/', stripslashes(trim($_POST['password'])))) {
-        $password = $dbc->mysqli_real_escape_string(trim($_POST['password']));
+    $EmailError = False;
+    $passwordError = False;
+
+    if (preg_match('%[A-Za-z0-9\.\-\$\@\$\!\%\*\#\?\&]%', stripslashes(trim($_POST['password'])))) {
+        $password = $mysqli->real_escape_string(trim($_POST['password']));
+        $password  = hash("sha256", $password);
     }
-    else{
+    else {
         $passwordError = True;
     }
-    if (preg_match('%/[A-Za-z0-9\.\-\$\@\$\!\%\*\#\?\&]%/', stripslashes(trim($_POST['email'])))) {
-        $email = $dbc->mysqli_real_escape_string(trim($_POST['email']));
+    if (preg_match('%[A-Za-z0-9\.\-\$\@\$\!\%\*\#\?\&]%', stripslashes(trim($_POST['email'])))) {
+        $email = $mysqli->real_escape_string(trim($_POST['email']));
     }
-    else{
+    else {
         $EmailError = True;
     }
-}
 
-if($passwordError==False and $EmailError == False){
-    $stmt = $mysqli->prepare('SELECT UserID,Name,is_admin FROM customer WHERE email = ? AND password = ? LIMIT 1');
-    $stmt->bind_param("ss",$email,hash("sha256",$password));
-    $stmt->bind_result($UID,$name,$admin);
-    $stmt->execute();
-    $results = $stmt->fetch();
-    if ($results ==1){
-        session_start();
-        if ($admin)
-            $_SESSION['priv'] = '1';
-        else
-            $_SESSION['priv'] = '0';
-        $_SESSION['user'] = $CID;
-        $_SESSION['name'] = $name;
-        header('location:../index.php');
+
+    if ($passwordError == False and $EmailError == False) {
+        $stmt = $mysqli->prepare('SELECT UID,Name,is_admin FROM user WHERE email = ? AND password = ? LIMIT 1');
+        $stmt->bind_param("ss", $email,$password );
+        $stmt->bind_result($UID, $name, $admin);
+        $stmt->execute();
+        $results = $stmt->fetch();
+        if ($results == 1) {
+            session_start();
+            if ($admin)
+                $_SESSION['priv'] = '1';
+            else
+                $_SESSION['priv'] = '0';
+            $_SESSION['user'] = $CID;
+            $_SESSION['name'] = $name;
+            header('location:index.php');
+        } else {
+            echo "Invalid Log in Please go back and try again";
+        }
+
     }
-    else{
-        echo "Invalid Log in Please go back and try again";
+    else {
+        echo "Invalid Entry Please go back and try again";
     }
-
-}
-
-else{
-    echo "Invalid Entry Please go back and try again";
 }
 ?>
 

@@ -9,7 +9,6 @@
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
                 <li class=><a href="index.php">Home</a></li>
-                <li><a href="products.php">Products</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
@@ -19,13 +18,13 @@ session_start();
 if(isset($_SESSION['priv'])){
     echo " <li> Hello ". $_SESSION['name']."</li> <br>";
     if($_SESSION['priv'] == '0'){
-        echo '<li> <a href = "cart.php"> View Cart </a></li> ';
+        echo '<li> <a href = "profile.php"> View Profile </a></li> ';
     }
 	else{
-		echo '<li> <a href ="staff.php"> Staff Page </a></li>';
+		echo '<li> <a href ="admin.php"> Admin Page </a></li>';
 		
 	}
-	echo '<br> <li> <a href = "Processes/log_out.php"> Log out </a></li> ';
+	echo '<br> <li> <a href = "log_out.php"> Log out </a></li> ';
 }
 
 else{
