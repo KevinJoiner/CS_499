@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="300a179f-a138-4a17-92c9-d3bccb000cd8" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Training_site/log_out.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Training_site/config/header.php" afterPath="$PROJECT_DIR$/Training_site/config/header.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Training_site/user_login.php" afterPath="$PROJECT_DIR$/Training_site/user_login.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Training_site/user_register.php" afterPath="$PROJECT_DIR$/Training_site/user_register.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sql_connector.php" afterPath="$PROJECT_DIR$/sql_connector.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/User.sql" afterPath="$PROJECT_DIR$/User.sql" />
     </list>
     <ignored path="CS_499.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -231,12 +228,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1477024567941</updated>
-      <workItem from="1477024569149" duration="2862000" />
+      <workItem from="1477024569149" duration="2983000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2862000" />
+    <option name="totallyTimeSpent" value="2983000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
