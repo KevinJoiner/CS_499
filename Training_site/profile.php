@@ -1,10 +1,9 @@
 
-
 <?php include 'config/header.php';
 require_once('../sql_connector.php');?>
 
 <?php
-if (!isset($_SESSION['user'])){
+if (isset($_SESSION['user'])){
     header('location:index.php');
 }
 ?>

@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="300a179f-a138-4a17-92c9-d3bccb000cd8" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Training_site/assets/css/main.css" afterPath="$PROJECT_DIR$/Training_site/assets/css/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Training_site/config/header.php" afterPath="$PROJECT_DIR$/Training_site/config/header.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Training_site/profile.php" afterPath="$PROJECT_DIR$/Training_site/profile.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Training_site/user_register.php" afterPath="$PROJECT_DIR$/Training_site/user_register.php" />
     </list>
     <ignored path="CS_499.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,13 +26,61 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="user_login.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="user_login.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Training_site/user_login.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="21" column="60" selection-start-line="21" selection-start-column="60" selection-end-line="21" selection-end-column="60" />
+            <state relative-caret-position="119">
+              <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
               <folding>
-                <marker date="1479090625889" expanded="true" signature="832:907" placeholder="SELECT UID,N... user" />
+                <marker date="1479093520090" expanded="true" signature="832:907" placeholder="SELECT UID,N... user" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="user_register.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Training_site/user_register.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="459">
+              <caret line="48" column="38" selection-start-line="48" selection-start-column="38" selection-end-line="48" selection-end-column="38" />
+              <folding>
+                <marker date="1479093121285" expanded="true" signature="1058:1111" placeholder="Insert INTO user... " />
+                <marker date="1479093121285" expanded="true" signature="1385:1421" placeholder="SELECT UID F... user" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Sanitization.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Training_site/Sanitization.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="header.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Training_site/config/header.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="20" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="profile.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Training_site/profile.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="80" column="32" selection-start-line="80" selection-start-column="27" selection-end-line="80" selection-end-column="32" />
+              <folding>
+                <marker date="1479092294790" expanded="true" signature="231:267" placeholder="select Email... user" />
+                <marker date="1479092294790" expanded="true" signature="886:920" placeholder="update user " />
+                <marker date="1479092294790" expanded="true" signature="949:992" placeholder="update user " />
+                <marker date="1479092294790" expanded="true" signature="1787:1829" placeholder="select Name,... user" />
               </folding>
             </state>
           </provider>
@@ -40,8 +89,8 @@
       <file leaf-file-name="admin_user_info.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Training_site/admin_user_info.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="20" column="19" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="60" />
+            <state relative-caret-position="34">
+              <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="37" />
               <folding>
                 <marker date="1479090625883" expanded="true" signature="772:828" placeholder="UPDATE user " />
                 <marker date="1479090625883" expanded="true" signature="1462:1480" placeholder="SELECT * FRO... user" />
@@ -60,53 +109,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="user_register.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Training_site/user_register.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="23" column="60" selection-start-line="23" selection-start-column="60" selection-end-line="23" selection-end-column="60" />
-              <folding>
-                <marker date="1479090625890" expanded="true" signature="1055:1108" placeholder="Insert INTO user... " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="header.php" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/AppData/Roaming/Skype/My Skype Received Files/header.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="58" selection-start-line="5" selection-start-column="58" selection-end-line="5" selection-end-column="58" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="header.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Training_site/config/header.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="55" selection-start-line="11" selection-start-column="55" selection-end-line="11" selection-end-column="55" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="custom.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Training_site/assets/css/custom.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-408">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="bootstrap.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Training_site/assets/css/bootstrap.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="23" column="5" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -152,11 +159,12 @@
       <list>
         <option value="$PROJECT_DIR$/sql_connector.php" />
         <option value="$PROJECT_DIR$/Training_site/log_out.php" />
-        <option value="$PROJECT_DIR$/Training_site/admin_user_info.php" />
-        <option value="$PROJECT_DIR$/Training_site/user_login.php" />
-        <option value="$PROJECT_DIR$/Training_site/user_register.php" />
         <option value="$PROJECT_DIR$/Training_site/assets/css/main.css" />
         <option value="$PROJECT_DIR$/Training_site/config/header.php" />
+        <option value="$PROJECT_DIR$/Training_site/admin_user_info.php" />
+        <option value="$PROJECT_DIR$/Training_site/profile.php" />
+        <option value="$PROJECT_DIR$/Training_site/user_register.php" />
+        <option value="$PROJECT_DIR$/Training_site/user_login.php" />
       </list>
     </option>
   </component>
@@ -225,24 +233,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Training_site" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CS_499" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CS_499" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Training_site" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -343,7 +333,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6355000" />
+    <option name="totallyTimeSpent" value="8577000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="46" y="0" width="1936" height="1055" extended-state="0" />
@@ -381,7 +371,7 @@
         <state relative-caret-position="680">
           <caret line="40" column="29" selection-start-line="40" selection-start-column="29" selection-end-line="40" selection-end-column="29" />
           <folding>
-            <marker date="1479090625889" expanded="true" signature="832:907" placeholder="SELECT UID,N... user" />
+            <marker date="1479093520090" expanded="true" signature="832:907" placeholder="SELECT UID,N... user" />
           </folding>
         </state>
       </provider>
@@ -391,7 +381,8 @@
         <state relative-caret-position="765">
           <caret line="45" column="29" selection-start-line="45" selection-start-column="29" selection-end-line="45" selection-end-column="29" />
           <folding>
-            <marker date="1479090625890" expanded="true" signature="1055:1108" placeholder="Insert INTO user... " />
+            <marker date="1479093121285" expanded="true" signature="1058:1111" placeholder="Insert INTO user... " />
+            <marker date="1479093121285" expanded="true" signature="1385:1421" placeholder="SELECT UID F... user" />
           </folding>
         </state>
       </provider>
@@ -444,33 +435,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Training_site/profile.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="6" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="31" />
-          <folding>
-            <marker date="1479090625429" expanded="true" signature="228:264" placeholder="select Email... user" />
-            <marker date="1479090625429" expanded="true" signature="957:991" placeholder="update user " />
-            <marker date="1479090625429" expanded="true" signature="1101:1144" placeholder="update user " />
-            <marker date="1479090625429" expanded="true" signature="1703:1745" placeholder="select Name,... user" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Training_site/Sanitization.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Training_site/user_login.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="9" selection-end-column="1" />
           <folding>
-            <marker date="1479090625889" expanded="true" signature="832:907" placeholder="SELECT UID,N... user" />
+            <marker date="1479093520090" expanded="true" signature="832:907" placeholder="SELECT UID,N... user" />
           </folding>
         </state>
       </provider>
@@ -480,7 +450,8 @@
         <state relative-caret-position="170">
           <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding>
-            <marker date="1479090625890" expanded="true" signature="1055:1108" placeholder="Insert INTO user... " />
+            <marker date="1479093121285" expanded="true" signature="1058:1111" placeholder="Insert INTO user... " />
+            <marker date="1479093121285" expanded="true" signature="1385:1421" placeholder="SELECT UID F... user" />
           </folding>
         </state>
       </provider>
@@ -498,47 +469,6 @@
         <state relative-caret-position="221">
           <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Training_site/admin_user_info.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="20" column="19" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="60" />
-          <folding>
-            <marker date="1479090625883" expanded="true" signature="772:828" placeholder="UPDATE user " />
-            <marker date="1479090625883" expanded="true" signature="1462:1480" placeholder="SELECT * FRO... user" />
-            <marker date="1479090625883" expanded="true" signature="1558:1686" placeholder="..." />
-            <marker date="1479090625883" expanded="true" signature="1566:1686" placeholder="..." />
-            <marker date="1479090625883" expanded="true" signature="1575:1676" placeholder="..." />
-            <marker date="1479090625883" expanded="true" signature="2212:2387" placeholder="..." />
-            <marker date="1479090625883" expanded="true" signature="2240:2379" placeholder="..." />
-            <marker date="1479090625883" expanded="true" signature="2425:2593" placeholder="..." />
-            <marker date="1479090625883" expanded="true" signature="2453:2585" placeholder="..." />
-            <marker date="1479090625883" expanded="true" signature="2746:2841" placeholder="..." />
-            <marker date="1479090625883" expanded="true" signature="2963:3105" placeholder="..." />
-            <marker date="1479090625883" expanded="true" signature="2999:3100" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Training_site/user_login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="21" column="60" selection-start-line="21" selection-start-column="60" selection-end-line="21" selection-end-column="60" />
-          <folding>
-            <marker date="1479090625889" expanded="true" signature="832:907" placeholder="SELECT UID,N... user" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Training_site/user_register.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="23" column="60" selection-start-line="23" selection-start-column="60" selection-end-line="23" selection-end-column="60" />
-          <folding>
-            <marker date="1479090625890" expanded="true" signature="1055:1108" placeholder="Insert INTO user... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -574,14 +504,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Training_site/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Training_site/assets/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -592,9 +514,80 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Training_site/config/header.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="55" selection-start-line="11" selection-start-column="55" selection-end-line="11" selection-end-column="55" />
+        <state relative-caret-position="85">
+          <caret line="5" column="20" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="21" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Training_site/admin_user_info.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="37" />
+          <folding>
+            <marker date="1479090625883" expanded="true" signature="772:828" placeholder="UPDATE user " />
+            <marker date="1479090625883" expanded="true" signature="1462:1480" placeholder="SELECT * FRO... user" />
+            <marker date="1479090625883" expanded="true" signature="1558:1686" placeholder="..." />
+            <marker date="1479090625883" expanded="true" signature="1566:1686" placeholder="..." />
+            <marker date="1479090625883" expanded="true" signature="1575:1676" placeholder="..." />
+            <marker date="1479090625883" expanded="true" signature="2212:2387" placeholder="..." />
+            <marker date="1479090625883" expanded="true" signature="2240:2379" placeholder="..." />
+            <marker date="1479090625883" expanded="true" signature="2425:2593" placeholder="..." />
+            <marker date="1479090625883" expanded="true" signature="2453:2585" placeholder="..." />
+            <marker date="1479090625883" expanded="true" signature="2746:2841" placeholder="..." />
+            <marker date="1479090625883" expanded="true" signature="2963:3105" placeholder="..." />
+            <marker date="1479090625883" expanded="true" signature="2999:3100" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Training_site/Sanitization.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Training_site/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Training_site/profile.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="80" column="32" selection-start-line="80" selection-start-column="27" selection-end-line="80" selection-end-column="32" />
+          <folding>
+            <marker date="1479092294790" expanded="true" signature="231:267" placeholder="select Email... user" />
+            <marker date="1479092294790" expanded="true" signature="886:920" placeholder="update user " />
+            <marker date="1479092294790" expanded="true" signature="949:992" placeholder="update user " />
+            <marker date="1479092294790" expanded="true" signature="1787:1829" placeholder="select Name,... user" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Training_site/user_register.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="48" column="38" selection-start-line="48" selection-start-column="38" selection-end-line="48" selection-end-column="38" />
+          <folding>
+            <marker date="1479093121285" expanded="true" signature="1058:1111" placeholder="Insert INTO user... " />
+            <marker date="1479093121285" expanded="true" signature="1385:1421" placeholder="SELECT UID F... user" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Training_site/user_login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
+          <folding>
+            <marker date="1479093520090" expanded="true" signature="832:907" placeholder="SELECT UID,N... user" />
+          </folding>
         </state>
       </provider>
     </entry>

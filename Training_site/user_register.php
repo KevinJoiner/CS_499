@@ -21,7 +21,7 @@ if(isset($_POST['submit'])) {
     else {
         $passwordError = True;
     }
-    if (preg_match('%[A-Za-z0-9]+@[A-Za-z0-9]+.[A-Za-z0-9]%', stripslashes(trim($_POST['email'])))) {
+    if (preg_match('%[A-Za-z0-9]+@+[A-Za-z0-9]+\.+[A-Za-z0-9]%', stripslashes(trim($_POST['email'])))) {
         $email = $mysqli->real_escape_string(trim($_POST['email']));
     }
     else {
@@ -44,6 +44,10 @@ if(isset($_POST['submit'])) {
         $results = $stmt->fetch();
         if ($mysqli->affected_rows == 1) {
             session_start();
+            $stmt2 = $mysqli->prepare('SELECT UID FROM user WHERE email = ?');
+            $stmt2->bind_param("s", $email);
+            $stmt2->bind_result($UID);
+            $stmt2->execute();
             $_SESSION['priv'] = '0';
             $_SESSION['user'] = $UID;
             $_SESSION['name'] = $name;
