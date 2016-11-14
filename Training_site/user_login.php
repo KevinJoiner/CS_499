@@ -5,6 +5,9 @@ require_once('../sql_connector.php');?>
 
 
 <?php
+if (isset($_SESSION['user'])){
+    header('location:index.php');
+}
 if(isset($_POST['submit'])) {
     $EmailError = False;
     $passwordError = False;
@@ -36,7 +39,7 @@ if(isset($_POST['submit'])) {
                 $_SESSION['priv'] = '1';
             else
                 $_SESSION['priv'] = $admin;
-            $_SESSION['user'] = $CID;
+            $_SESSION['user'] = $UID;
             $_SESSION['name'] = $name;
             header('location:index.php');
         } else {

@@ -5,6 +5,10 @@ require_once('../sql_connector.php');?>
 
 
 <?php
+if (isset($_SESSION['user'])){
+    header('location:index.php');
+}
+
 if(isset($_POST['submit'])) {
     $EmailError = False;
     $passwordError = False;
