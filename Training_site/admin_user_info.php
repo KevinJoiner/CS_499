@@ -18,7 +18,7 @@ if(isset($_POST['Save'])) {
     $NameError = False;
 
 
-    if (preg_match('%[A-Za-z0-9\.\-\$\@\$\!\%\*\#\?\&]%', stripslashes(trim($_POST['email'])))) {
+    if (preg_match('%[A-Za-z0-9]+@[A-Za-z0-9]+.[A-Za-z0-9]%', stripslashes(trim($_POST['email'])))) {
         $email = $mysqli->real_escape_string(trim($_POST['email']));
     }
     else {
@@ -84,7 +84,7 @@ while($row = $result->fetch_array(MYSQLI_ASSOC)){
         echo '<tr> <form action="admin_user_info.php" method="post">';
         echo' <td><input type="hidden" name="UserID" value="'.$_POST['UID'].'" />'. $row['UID'].'</td>
 	 <td>'. '<input type="text" name="name" size="15" value="'.$row['Name'] .'" />'.'</td>
-     <td>'. '<input type="text"name="email"  value="'.$row['Email'] .'" />'.'</td>';
+     <td>'. '<input type="email"name="email"  value="'.$row['Email'] .'" />'.'</td>';
         if ($row['is_admin']== 1)
             echo '<td>'. '<select name="is_admin">
                 <option value="saab">User</option>

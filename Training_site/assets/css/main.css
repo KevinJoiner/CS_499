@@ -1,20 +1,81 @@
 @import url(bootstrap.css);
 
+#heading nav{
+	background-color: #006a67;
+	margin-bottom: 0px;
+}
+
+#heading nav a{
+	color: #ffffff;
+	font-size: 20px;
+	display: inline;
+}
+
+#heading .nav a:visited{
+	color: #ffffff;
+}
+
+#heading .nav a:hover{
+	color: #62a5c1;
+}
+
+/*#heading nav a li{
+	margin-top: 10px;
+}*/
+
+#heading .nav li a img{
+	height: 45px;
+	width: 80px;
+}
+
 #home_page{
-    background-color: #e5e5e5;
-    height: 1000px;
 	text-align: center;
 }
 
-.banner {
-    height: 200px;
-    background-color: #31708f;
+form{
+	background-color: #006a67;
+}
+.form-group{
+	padding-top:20px;
+}
+form label{
+	color: #ffffff;
+	padding-top: 0px !important;
+	margin-bottom: 0px;
+	margin-right: 0px;
 }
 
-.nav li a {
-    color:black;
-	display: inline;
+form input{
+	border: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
 }
+
+form {
+	margin-top:20px;
+	color: #fff;
+
+}
+
+.banner {
+	height: 200px;
+	background-color: #31708f;
+}
+
+.sqs_blue_line{
+	background-color: #62a5c1;
+}
+
+
+
+
+
+
+
+
+
+
+
 #inventory form{
 	display: inline;
 }
@@ -22,6 +83,7 @@
 #product h4{
 	display: inline;
 }
+
 table{
 	width: 90%;
     left: 5%;
@@ -40,18 +102,3 @@ table{
 	padding-right: 2em;
 }
 
-#cart input{
-	    float: none;
-		padding:0px;
-}
-
-.sale{
-	color: red;
-	display: inline-block;
-}
-
-.old_price{
-	text-decoration: line-through;
-	display: inline-block;
-	padding-right:2px;
-}
