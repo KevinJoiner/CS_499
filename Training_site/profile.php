@@ -1,3 +1,9 @@
+<?php
+if ($_SESSION['priv']!='1'){
+    header('location:index.php');
+}
+?>
+
 <?php include 'config/header.php';
 require_once('../sql_connector.php');?>
 
