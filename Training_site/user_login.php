@@ -19,7 +19,7 @@ if(isset($_POST['submit'])) {
     else {
         $passwordError = True;
     }
-    if (preg_match('%[A-Za-z0-9]+@[A-Za-z0-9]+.[A-Za-z0-9]%', stripslashes(trim($_POST['email'])))) {
+    if (preg_match('%[A-Za-z0-9]+@+[A-Za-z0-9]+\.+[A-Za-z0-9]%', stripslashes(trim($_POST['email'])))) {
         $email = $mysqli->real_escape_string(trim($_POST['email']));
     }
     else {
