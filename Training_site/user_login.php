@@ -35,7 +35,7 @@ if(isset($_POST['submit'])) {
             if ($admin)
                 $_SESSION['priv'] = '1';
             else
-                $_SESSION['priv'] = '0';
+                $_SESSION['priv'] = $admin;
             $_SESSION['user'] = $CID;
             $_SESSION['name'] = $name;
             header('location:index.php');

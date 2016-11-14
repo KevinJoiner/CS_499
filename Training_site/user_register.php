@@ -38,7 +38,7 @@ if(isset($_POST['submit'])) {
         $stmt->bind_param("sss",$name,$password,$email);
         $stmt->execute();
         $results = $stmt->fetch();
-        if ($results == 1) {
+        if ($mysqli->affected_rows == 1) {
             session_start();
             $_SESSION['priv'] = '0';
             $_SESSION['user'] = $UID;
