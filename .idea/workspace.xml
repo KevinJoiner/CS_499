@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="300a179f-a138-4a17-92c9-d3bccb000cd8" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Training_site/admin_user_info.php" afterPath="$PROJECT_DIR$/Training_site/admin_user_info.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Training_site/assets/css/main.css" afterPath="$PROJECT_DIR$/Training_site/assets/css/main.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Training_site/config/header.php" afterPath="$PROJECT_DIR$/Training_site/config/header.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Training_site/user_login.php" afterPath="$PROJECT_DIR$/Training_site/user_login.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Training_site/user_register.php" afterPath="$PROJECT_DIR$/Training_site/user_register.php" />
     </list>
     <ignored path="CS_499.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -35,7 +31,7 @@
             <state relative-caret-position="306">
               <caret line="21" column="60" selection-start-line="21" selection-start-column="60" selection-end-line="21" selection-end-column="60" />
               <folding>
-                <marker date="1479088332896" expanded="true" signature="832:907" placeholder="SELECT UID,N... user" />
+                <marker date="1479090625889" expanded="true" signature="832:907" placeholder="SELECT UID,N... user" />
               </folding>
             </state>
           </provider>
@@ -47,18 +43,18 @@
             <state relative-caret-position="136">
               <caret line="20" column="19" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="60" />
               <folding>
-                <marker date="1479088179839" expanded="true" signature="772:828" placeholder="UPDATE user " />
-                <marker date="1479088179839" expanded="true" signature="1462:1480" placeholder="SELECT * FRO... user" />
-                <marker date="1479088179839" expanded="true" signature="1558:1686" placeholder="..." />
-                <marker date="1479088179839" expanded="true" signature="1566:1686" placeholder="..." />
-                <marker date="1479088179839" expanded="true" signature="1575:1676" placeholder="..." />
-                <marker date="1479088179839" expanded="true" signature="2212:2387" placeholder="..." />
-                <marker date="1479088179839" expanded="true" signature="2240:2379" placeholder="..." />
-                <marker date="1479088179839" expanded="true" signature="2425:2593" placeholder="..." />
-                <marker date="1479088179839" expanded="true" signature="2453:2585" placeholder="..." />
-                <marker date="1479088179839" expanded="true" signature="2746:2841" placeholder="..." />
-                <marker date="1479088179839" expanded="true" signature="2963:3105" placeholder="..." />
-                <marker date="1479088179839" expanded="true" signature="2999:3100" placeholder="..." />
+                <marker date="1479090625883" expanded="true" signature="772:828" placeholder="UPDATE user " />
+                <marker date="1479090625883" expanded="true" signature="1462:1480" placeholder="SELECT * FRO... user" />
+                <marker date="1479090625883" expanded="true" signature="1558:1686" placeholder="..." />
+                <marker date="1479090625883" expanded="true" signature="1566:1686" placeholder="..." />
+                <marker date="1479090625883" expanded="true" signature="1575:1676" placeholder="..." />
+                <marker date="1479090625883" expanded="true" signature="2212:2387" placeholder="..." />
+                <marker date="1479090625883" expanded="true" signature="2240:2379" placeholder="..." />
+                <marker date="1479090625883" expanded="true" signature="2425:2593" placeholder="..." />
+                <marker date="1479090625883" expanded="true" signature="2453:2585" placeholder="..." />
+                <marker date="1479090625883" expanded="true" signature="2746:2841" placeholder="..." />
+                <marker date="1479090625883" expanded="true" signature="2963:3105" placeholder="..." />
+                <marker date="1479090625883" expanded="true" signature="2999:3100" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -70,7 +66,7 @@
             <state relative-caret-position="136">
               <caret line="23" column="60" selection-start-line="23" selection-start-column="60" selection-end-line="23" selection-end-column="60" />
               <folding>
-                <marker date="1479088346284" expanded="true" signature="1055:1108" placeholder="Insert INTO user... " />
+                <marker date="1479090625890" expanded="true" signature="1055:1108" placeholder="Insert INTO user... " />
               </folding>
             </state>
           </provider>
@@ -86,11 +82,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="header.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="header.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Training_site/config/header.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+            <state relative-caret-position="187">
+              <caret line="11" column="55" selection-start-line="11" selection-start-column="55" selection-end-line="11" selection-end-column="55" />
               <folding />
             </state>
           </provider>
@@ -116,11 +112,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Training_site/assets/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
-              <caret line="42" column="32" selection-start-line="42" selection-start-column="32" selection-end-line="42" selection-end-column="32" />
+            <state relative-caret-position="85">
+              <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -159,8 +155,8 @@
         <option value="$PROJECT_DIR$/Training_site/admin_user_info.php" />
         <option value="$PROJECT_DIR$/Training_site/user_login.php" />
         <option value="$PROJECT_DIR$/Training_site/user_register.php" />
-        <option value="$PROJECT_DIR$/Training_site/config/header.php" />
         <option value="$PROJECT_DIR$/Training_site/assets/css/main.css" />
+        <option value="$PROJECT_DIR$/Training_site/config/header.php" />
       </list>
     </option>
   </component>
@@ -171,10 +167,9 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
+    <option name="x" value="46" />
     <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="height" value="1055" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -348,10 +343,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5610000" />
+    <option name="totallyTimeSpent" value="6355000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="46" y="0" width="1936" height="1055" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12447917" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -386,7 +381,7 @@
         <state relative-caret-position="680">
           <caret line="40" column="29" selection-start-line="40" selection-start-column="29" selection-end-line="40" selection-end-column="29" />
           <folding>
-            <marker date="1479088332896" expanded="true" signature="832:907" placeholder="SELECT UID,N... user" />
+            <marker date="1479090625889" expanded="true" signature="832:907" placeholder="SELECT UID,N... user" />
           </folding>
         </state>
       </provider>
@@ -396,7 +391,7 @@
         <state relative-caret-position="765">
           <caret line="45" column="29" selection-start-line="45" selection-start-column="29" selection-end-line="45" selection-end-column="29" />
           <folding>
-            <marker date="1479088346284" expanded="true" signature="1055:1108" placeholder="Insert INTO user... " />
+            <marker date="1479090625890" expanded="true" signature="1055:1108" placeholder="Insert INTO user... " />
           </folding>
         </state>
       </provider>
@@ -454,10 +449,10 @@
         <state relative-caret-position="68">
           <caret line="4" column="6" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="31" />
           <folding>
-            <marker date="1479085860719" expanded="true" signature="153:189" placeholder="select Email... user" />
-            <marker date="1479085860719" expanded="true" signature="882:916" placeholder="update user " />
-            <marker date="1479085860719" expanded="true" signature="1026:1069" placeholder="update user " />
-            <marker date="1479085860719" expanded="true" signature="1628:1670" placeholder="select Name,... user" />
+            <marker date="1479090625429" expanded="true" signature="228:264" placeholder="select Email... user" />
+            <marker date="1479090625429" expanded="true" signature="957:991" placeholder="update user " />
+            <marker date="1479090625429" expanded="true" signature="1101:1144" placeholder="update user " />
+            <marker date="1479090625429" expanded="true" signature="1703:1745" placeholder="select Name,... user" />
           </folding>
         </state>
       </provider>
@@ -475,7 +470,7 @@
         <state relative-caret-position="119">
           <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="9" selection-end-column="1" />
           <folding>
-            <marker date="1479088332896" expanded="true" signature="832:907" placeholder="SELECT UID,N... user" />
+            <marker date="1479090625889" expanded="true" signature="832:907" placeholder="SELECT UID,N... user" />
           </folding>
         </state>
       </provider>
@@ -485,7 +480,7 @@
         <state relative-caret-position="170">
           <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding>
-            <marker date="1479088346284" expanded="true" signature="1055:1108" placeholder="Insert INTO user... " />
+            <marker date="1479090625890" expanded="true" signature="1055:1108" placeholder="Insert INTO user... " />
           </folding>
         </state>
       </provider>
@@ -511,18 +506,18 @@
         <state relative-caret-position="136">
           <caret line="20" column="19" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="60" />
           <folding>
-            <marker date="1479088179839" expanded="true" signature="772:828" placeholder="UPDATE user " />
-            <marker date="1479088179839" expanded="true" signature="1462:1480" placeholder="SELECT * FRO... user" />
-            <marker date="1479088179839" expanded="true" signature="1558:1686" placeholder="..." />
-            <marker date="1479088179839" expanded="true" signature="1566:1686" placeholder="..." />
-            <marker date="1479088179839" expanded="true" signature="1575:1676" placeholder="..." />
-            <marker date="1479088179839" expanded="true" signature="2212:2387" placeholder="..." />
-            <marker date="1479088179839" expanded="true" signature="2240:2379" placeholder="..." />
-            <marker date="1479088179839" expanded="true" signature="2425:2593" placeholder="..." />
-            <marker date="1479088179839" expanded="true" signature="2453:2585" placeholder="..." />
-            <marker date="1479088179839" expanded="true" signature="2746:2841" placeholder="..." />
-            <marker date="1479088179839" expanded="true" signature="2963:3105" placeholder="..." />
-            <marker date="1479088179839" expanded="true" signature="2999:3100" placeholder="..." />
+            <marker date="1479090625883" expanded="true" signature="772:828" placeholder="UPDATE user " />
+            <marker date="1479090625883" expanded="true" signature="1462:1480" placeholder="SELECT * FRO... user" />
+            <marker date="1479090625883" expanded="true" signature="1558:1686" placeholder="..." />
+            <marker date="1479090625883" expanded="true" signature="1566:1686" placeholder="..." />
+            <marker date="1479090625883" expanded="true" signature="1575:1676" placeholder="..." />
+            <marker date="1479090625883" expanded="true" signature="2212:2387" placeholder="..." />
+            <marker date="1479090625883" expanded="true" signature="2240:2379" placeholder="..." />
+            <marker date="1479090625883" expanded="true" signature="2425:2593" placeholder="..." />
+            <marker date="1479090625883" expanded="true" signature="2453:2585" placeholder="..." />
+            <marker date="1479090625883" expanded="true" signature="2746:2841" placeholder="..." />
+            <marker date="1479090625883" expanded="true" signature="2963:3105" placeholder="..." />
+            <marker date="1479090625883" expanded="true" signature="2999:3100" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -532,7 +527,7 @@
         <state relative-caret-position="306">
           <caret line="21" column="60" selection-start-line="21" selection-start-column="60" selection-end-line="21" selection-end-column="60" />
           <folding>
-            <marker date="1479088332896" expanded="true" signature="832:907" placeholder="SELECT UID,N... user" />
+            <marker date="1479090625889" expanded="true" signature="832:907" placeholder="SELECT UID,N... user" />
           </folding>
         </state>
       </provider>
@@ -542,7 +537,7 @@
         <state relative-caret-position="136">
           <caret line="23" column="60" selection-start-line="23" selection-start-column="60" selection-end-line="23" selection-end-column="60" />
           <folding>
-            <marker date="1479088346284" expanded="true" signature="1055:1108" placeholder="Insert INTO user... " />
+            <marker date="1479090625890" expanded="true" signature="1055:1108" placeholder="Insert INTO user... " />
           </folding>
         </state>
       </provider>
@@ -587,18 +582,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Training_site/config/header.php">
+    <entry file="file://$PROJECT_DIR$/Training_site/assets/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+        <state relative-caret-position="85">
+          <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Training_site/assets/css/main.css">
+    <entry file="file://$PROJECT_DIR$/Training_site/config/header.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="42" column="32" selection-start-line="42" selection-start-column="32" selection-end-line="42" selection-end-column="32" />
+        <state relative-caret-position="187">
+          <caret line="11" column="55" selection-start-line="11" selection-start-column="55" selection-end-line="11" selection-end-column="55" />
           <folding />
         </state>
       </provider>

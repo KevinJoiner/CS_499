@@ -1,5 +1,6 @@
 
 <link rel="stylesheet" type="text/css" href="assets\css\main.css">
+<?php session_start(); ?>
 <html>
 <head>
     <div id ="heading">
@@ -8,13 +9,13 @@
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li><a href="index.php"><img src="assets/images/logo.png" alt="SQS logo" width="42" height="42"></a></li>
+                    <?php if(isset($_SESSION['name'])) echo " <li> Hello ". $_SESSION['name']."</li> <br>"; ?>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
 
                     <?php
-                    session_start();
                     if(isset($_SESSION['priv'])){
-                        echo " <li> Hello ". $_SESSION['name']."</li> <br>";
+
                         echo '<li> <a href = "profile.php"> View Profile </a></li> ';
                         if($_SESSION['priv'] == '1'){
 
