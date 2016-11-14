@@ -1,5 +1,6 @@
+
 <?php
-if ($_SESSION['priv']!='1'){
+if (isset($_SESSION['user'])){
     header('location:index.php');
 }
 ?>
@@ -34,15 +35,19 @@ require_once('../sql_connector.php');?>
 		else {
 			$NameError = True;
 		}
+		if ($original_email == $email) {
+			$query = "update user set Name=? where UID=?";
+		}
+		else {
+			$query = "update user set Name=?, Email=? where UID=?";
+		}
 		$stmt->close();
 		if ($EmailError == False and $NameError == False) {
 			if ($original_email == $email) {
-				$query = "update user set Name=? where UID=?";
 				$stmt = $mysqli->prepare($query);
 				$stmt->bind_param("ss",$name,$UID);
 			}
 			else {
-				$query = "update user set Name=?, Email=? where UID=?";
 				$stmt = $mysqli->prepare($query);
 				$stmt->bind_param("sss",$name,$email,$UID);
 			}
@@ -53,7 +58,7 @@ require_once('../sql_connector.php');?>
 				$_SESSION['name'] = $name;
 				header("Refresh:0");
 			}
-			else {
+			else if ($original_email != $email) {
 				echo "Darn! that email is taken :( Try another!";
 			}
 
