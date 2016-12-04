@@ -5,7 +5,7 @@
  <body>
      <div>
 		<?php
-			if (isset($_SESSION['user'])){
+			if (isset($_SESSION['user'])){	//prompts user with following messages if/if not logged in
 				echo '<h2>Hey there! Click the links on the header to navigate the site.</h2>';
 			}
 			else{
