@@ -1,17 +1,18 @@
 
 
 <?php include 'config/header.php';
-require_once('../sql_connector.php');?>
+require_once('../sql_connector.php');?> //connects to data base
 
 
 <?php
-if (isset($_SESSION['user'])){
+if (isset($_SESSION['user'])){      //redirects if user isn't a user
     header('location:index.php');
 }
-if(isset($_POST['submit'])) {
+if(isset($_POST['submit'])) {          //waits for button press
     $EmailError = False;
     $passwordError = False;
 
+    //makes sure password and email aren't sql queries
     if (preg_match('%[A-Za-z0-9\.\-\$\@\$\!\%\*\#\?\&]%', stripslashes(trim($_POST['password'])))) {
         $password = $mysqli->real_escape_string(trim($_POST['password']));
         $password  = hash("sha256", $password);
@@ -26,7 +27,7 @@ if(isset($_POST['submit'])) {
         $EmailError = True;
     }
 
-
+    //updates info
     if ($passwordError == False and $EmailError == False) {
         $stmt = $mysqli->prepare('SELECT UID,Name,is_admin FROM user WHERE email = ? AND password = ? LIMIT 1');
         $stmt->bind_param("ss", $email,$password );
@@ -53,7 +54,7 @@ if(isset($_POST['submit'])) {
 }
 ?>
 
-<html>
+<html>  //displays input boxes
 <form  class= "form-horizontal"action="" method="post">
 
 
