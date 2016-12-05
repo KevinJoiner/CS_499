@@ -1,19 +1,20 @@
 
 
 <?php include 'config/header.php';
-require_once('../sql_connector.php');?>
+require_once('../sql_connector.php');?> //conects to database
 
 
 <?php
-if (isset($_SESSION['user'])){
+if (isset($_SESSION['user'])){		//redirects if user not an actual user
     header('location:index.php');
 }
 
-if(isset($_POST['submit'])) {
+if(isset($_POST['submit'])) {		//waits for buttons press
     $EmailError = False;
     $passwordError = False;
     $NameError = False;
 
+	//makes sure that pasword and email aren't sql queries
     if (preg_match('%[A-Za-z0-9\.\-\$\@\$\!\%\*\#\?\&]%', stripslashes(trim($_POST['password'])))) {
         $password = $mysqli->real_escape_string(trim($_POST['password']));
         $password  = hash("sha256", $password);
@@ -35,7 +36,7 @@ if(isset($_POST['submit'])) {
         $NameError = True;
     }
 
-
+	//updates info
     if ($passwordError == False and $EmailError == False and $NameError == False) {
         $query = "Insert INTO user (Name,Password,Email) VALUES (?,?,?)";
         $stmt = $mysqli->prepare($query);
@@ -66,6 +67,8 @@ if(isset($_POST['submit'])) {
     }
 }
 ?>
+
+//displays info
 <html>
 <form  class= "form-horizontal"action="" method="post">
 
