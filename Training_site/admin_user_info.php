@@ -4,20 +4,21 @@
 </head>
 <body id = "inventory">
 <?php
-if ($_SESSION['priv']!='1'){
+if ($_SESSION['priv']!='1'){	//redirect user to index page if the user isn't an admin
     header('location:index.php');
 }
 ?>
 
 
 <?php
-require_once('../sql_connector.php');
+require_once('../sql_connector.php'); //connects to the database
 
-if(isset($_POST['Save'])) {
+if(isset($_POST['Save'])) {	//won't execute code unless button is clicked
     $EmailError = False;
     $NameError = False;
 
 
+	//make sure that email and name aren't sql queries
     if (preg_match('%[A-Za-z0-9]+@+[A-Za-z0-9]+\.+[A-Za-z0-9]%', stripslashes(trim($_POST['email'])))) {
         $email = $mysqli->real_escape_string(trim($_POST['email']));
     }
@@ -32,7 +33,7 @@ if(isset($_POST['Save'])) {
         $NameError = True;
     }
 
-
+	//updates info, checks if it is good
     if ($EmailError == False and $NameError == False) {
         $query = "UPDATE user SET Name=?, Email=?,is_admin=? WHERE UID = ?";
         $stmt = $mysqli->prepare($query);
@@ -64,7 +65,7 @@ if(isset($_POST['Save'])) {
 
 
 
-
+//makes table to display table header
 $query = "SELECT * FROM user";
 $result = $mysqli->query($query);
 echo '<table class="table tabel-striped>">
@@ -77,7 +78,7 @@ echo '<table class="table tabel-striped>">
  </tr>
  </thead>';
 
-
+//fills up table with user(s) info
 while($row = $result->fetch_array(MYSQLI_ASSOC)){
 
     if(isset($_POST['UID'])and ($_POST['UID'] ==  $row['UID'] )){
@@ -111,6 +112,7 @@ while($row = $result->fetch_array(MYSQLI_ASSOC)){
     }
 }
 
+	//close database
 $mysqli->close();
 /*
 if(isset($_POST['add'])){
