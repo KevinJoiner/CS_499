@@ -3,13 +3,13 @@
 require_once('../sql_connector.php');?>
 
 <?php
-if (!isset($_SESSION['user'])){
+if (!isset($_SESSION['user'])){	//redirects to index page if user isn't a user
     header('location:index.php');
 }
 ?>
 
 <?php
-	if(isset($_POST['submit'])) {
+	if(isset($_POST['submit'])) {	//doesn't do anything unless button is pressed
 		$UID = $_SESSION['user'];
 		$query = "select Email from user where UID = ?";
 		$stmt = $mysqli->prepare($query);
@@ -22,6 +22,7 @@ if (!isset($_SESSION['user'])){
 		$EmailError = False;
 		$NameError = False;
 
+		//makes sure name and email arent sql queries
 		if (preg_match('%[A-Za-z0-9\.\-\$\@\$\!\%\*\#\?\&]%', stripslashes(trim($_POST['email'])))) {
 			$email = $mysqli->real_escape_string(trim($_POST['email']));
 		}
@@ -42,7 +43,7 @@ if (!isset($_SESSION['user'])){
 			$query = "update user set Name=?, Email=? where UID=?";
 		}
 		$stmt->close();
-		if ($EmailError == False and $NameError == False) {
+		if ($EmailError == False and $NameError == False) { //updates info
 			if ($original_email == $email) {
 				$stmt = $mysqli->prepare($query);
 				$stmt->bind_param("ss",$name,$UID);
@@ -70,9 +71,10 @@ if (!isset($_SESSION['user'])){
 ?>
 
 
-<html>
+<html>		
 <form  class= "form-horizontal"action="" method="post">
 	<?php
+		//displays info
 		$UID = $_SESSION['user'];
 		$query = "select Name, Email from user where UID = ?";
 		$stmt = $mysqli->prepare($query);
