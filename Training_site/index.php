@@ -98,7 +98,7 @@ if(isset($_POST['submit'])) {
 		//then, add the number and carrier to the database
         $stmt = $mysqli->prepare('INSERT INTO subscriber VALUES (?,?)');
 		$PhoneNumber = $response_array['number'];
-        $stmt->bind_param("ss", $Carrier,$PhoneNumber);
+        $stmt->bind_param("ss", $PhoneNumber,$Carrier);
         $stmt->execute();
 		$stmt->close();
     }
