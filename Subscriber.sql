@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 07, 2016 at 01:30 AM
+-- Generation Time: Dec 07, 2016 at 02:41 AM
 -- Server version: 10.1.16-MariaDB
 -- PHP Version: 7.0.9
 
@@ -26,9 +26,10 @@ SET time_zone = "+00:00";
 -- Table structure for table `subscriber`
 --
 
-CREATE TABLE `Subscriber` (
+CREATE TABLE `subscriber` (
   `phone_number` varchar(20) NOT NULL,
-  `carrier` varchar(100) NOT NULL
+  `carrier` varchar(10) NOT NULL,
+  `international_code` varchar(4) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
@@ -38,7 +39,7 @@ CREATE TABLE `Subscriber` (
 --
 -- Indexes for table `subscriber`
 --
-ALTER TABLE `Subscriber`
+ALTER TABLE `subscriber`
   ADD PRIMARY KEY (`phone_number`);
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

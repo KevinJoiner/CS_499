@@ -1,7 +1,7 @@
 
 
-<?php include 'config/header.php';
-require_once('../sql_connector.php');?> //connects to data base
+<?php include 'config/header.php'; //connects to data base
+require_once('../sql_connector.php');?>
 
 
 <?php
@@ -54,7 +54,7 @@ if(isset($_POST['submit'])) {          //waits for button press
 }
 ?>
 
-<html>  //displays input boxes
+<html>
 <form  class= "form-horizontal"action="" method="post">
 
 

@@ -7,7 +7,6 @@
  * Time: 2:56 AM
  */
 
-// Umm we can do this later I am to tired and this got conufsing sorry.
 function Sanitation_level($RawData, $level = 0, $type = normal){
     if ($level == 0)
         $data = RawData;

@@ -1,7 +1,7 @@
 
 
-<?php include 'config/header.php';
-require_once('../sql_connector.php');?> //conects to database
+<?php include 'config/header.php'; //conects to database
+require_once('../sql_connector.php');?>
 
 
 <?php
@@ -68,7 +68,6 @@ if(isset($_POST['submit'])) {		//waits for buttons press
 }
 ?>
 
-//displays info
 <html>
 <form  class= "form-horizontal"action="" method="post">
 
