@@ -23,20 +23,20 @@ if (!isset($_SESSION['user'])){	//redirects to index page if user isn't a user
 		$NameError = False;
 
 		//makes sure name and email arent sql queries
-		if (preg_match('%[A-Za-z0-9\.\-\$\@\$\!\%\*\#\?\&]%', stripslashes(trim($_POST['email'])))) {
+		if (preg_match('%[A-Za-z0-9]+@+[A-Za-z0-9]+\.+[A-Za-z0-9]%', stripslashes(trim($_POST['email'])))) {
 			$email = $mysqli->real_escape_string(trim($_POST['email']));
 		}
 		else {
 			$EmailError = True;
 		}
 
-		if (preg_match('%[A-Za-z]%', stripslashes(trim($_POST['name'])))) {
+		if (preg_match('%^[a-zA-Z]+$%', stripslashes(trim($_POST['name'])))) {
 			$name = $mysqli->real_escape_string(trim($_POST['name']));
 		}
 		else {
 			$NameError = True;
 		}
-		if ($original_email == $email) {
+		if ($EmailError == False and $original_email == $email) {
 			$query = "update user set Name=? where UID=?";
 		}
 		else {

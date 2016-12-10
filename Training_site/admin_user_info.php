@@ -26,7 +26,7 @@ if(isset($_POST['Save'])) {	//won't execute code unless button is clicked
         $EmailError = True;
     }
 
-    if (preg_match('%[A-Za-z]%', stripslashes(trim($_POST['name'])))) {
+    if (preg_match('%^[a-zA-Z]+$%', stripslashes(trim($_POST['name'])))) {
         $name = $mysqli->real_escape_string(trim($_POST['name']));
     }
     else {
